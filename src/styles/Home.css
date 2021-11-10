@@ -1,0 +1,89 @@
+.showcase-container {
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../images/main-image.jpg") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 70px 30px #000000;
+}
+.showcase-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.showcase-container img {
+  width: 100%;
+}
+.showcase-title {
+  color: white;
+  font-size: 3rem;
+  z-index: 3;
+  padding: 10px 30px;
+  margin-top: -30px;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+}
+.showcase-input-container {
+  display: flex;
+  width: 600px;
+  z-index: 3;
+}
+.showcase-input {
+  flex: 1;
+  padding: 20px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: none;
+  border: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+  outline: none;
+  border: 1px solid black;
+  border-right: none;
+}
+.showcase-input:focus {
+  border-color: #f54e59;
+}
+
+.showcase-button {
+  padding-right: 6px;
+  background-color: #fff;
+  -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-left: none;
+}
+.showcase-search-button-text {
+  padding: 18px 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  background-color: #f54e59;
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease;
+}
+.showcase-button:hover .showcase-search-button-text {
+  opacity: 0.7;
+}
