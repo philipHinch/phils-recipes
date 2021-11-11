@@ -1,0 +1,30 @@
+.sliding-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.sliding-menu-title {
+  font-size: 2rem;
+  padding: 10px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.sliding-menu-ul {
+  display: flex;
+  padding: 10px;
+  min-width: 1200px;
+  list-style: none;
+  justify-content: space-around;
+}
+.sliding-menu-ul a {
+  color: black;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 0 10px;
+}
+.sliding-menu-ul a:hover {
+  border-bottom: 1px solid black;
+}

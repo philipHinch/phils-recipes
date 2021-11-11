@@ -12,4 +12,11 @@ a {
   text-decoration: none;
 }
 
+.active {
+  color: #f54e59 !important;
+}
+.underline {
+  border-bottom: 1px solid #f54e59 !important;
+}
+
 /* UTILITY CLASSES */
