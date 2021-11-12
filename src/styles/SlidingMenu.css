@@ -1,12 +1,18 @@
+.active {
+  color: #f54e59 !important;
+  border-bottom: 1px solid #f54e59 !important;
+}
+
 .sliding-menu-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-top: 12px;
 }
 .sliding-menu-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 10px;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -15,16 +21,20 @@
 .sliding-menu-ul {
   display: flex;
   padding: 10px;
+
   min-width: 1200px;
   list-style: none;
   justify-content: space-around;
 }
-.sliding-menu-ul a {
+.sliding-menu-ul li {
   color: black;
-  font-size: 1.2rem;
-  padding: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 5px 10px;
   margin: 0 10px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
-.sliding-menu-ul a:hover {
+.sliding-menu-ul li:hover {
   border-bottom: 1px solid black;
 }

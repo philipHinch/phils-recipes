@@ -5,17 +5,32 @@ import { faHeart as faHeart2 } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
 
 
-
 const Card = ({ title, area, category, img }) => {
 
     const [heart, setHeart] = useState(faHeart2)
 
     const handleMouseEnter = () => {
-        setHeart(faHeart)
+        if (heart === faHeart2) {
+            setHeart(faHeart)
+        } else if (heart === faHeart) {
+            setHeart(faHeart2)
+        }
     }
     const handleMouseLeave = () => {
-        setHeart(faHeart2)
+        if (heart === faHeart2) {
+            setHeart(faHeart)
+        } else if (heart === faHeart) {
+            setHeart(faHeart2)
+        }
     }
+    const handleClick = () => {
+        if (heart === faHeart) {
+            setHeart(faHeart2)
+        } else {
+            setHeart(faHeart)
+        }
+    }
+
     return (
 
         <div className="card-container" >
@@ -27,7 +42,7 @@ const Card = ({ title, area, category, img }) => {
                 <div className="card-category"><p>{category}</p></div>
                 <div className="card-area"><p>{area}</p></div>
                 <div className="heart-btn"></div>
-                <FontAwesomeIcon icon={heart} size="lg" color="#f54e59" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
+                <FontAwesomeIcon icon={heart} size="lg" color="#f54e59" onClick={() => handleClick()} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
             </div>
         </div>
 

@@ -1,26 +1,55 @@
 import '../styles/Home.css';
-// import SlidingMenu from '../components/SlidingMenu';
+import SlidingMenu from '../components/SlidingMenu';
 import Card from '../components/Card';
 import { useState, useEffect } from 'react';
 import { useFetch } from '../hooks/useFetch';
+import Category from './Category';
 
 const Home = () => {
 
-    const startingURL = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b'
+    const idURL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
+
+    const categoryBaseURL = 'https://www.themealdb.com/api/json/v1/1/filter.php?c='
 
     const [inputValue, setInputValue] = useState('')
-    const [startingMeals, setStartingMeals] = useState('')
+    const [categoryMeals, setCategoryMeals] = useState([])
+    // const [idMeal, setIdMeal] = useState('')
+    // const [startingMeals, setStartingMeals] = useState('')
+
+
+
+
+
 
     const { data } = useFetch(inputValue && 'https://www.themealdb.com/api/json/v1/1/search.php?s=' + inputValue);
 
 
 
-    useEffect(() => {
-        fetch(startingURL)
+    // useEffect(() => {
+    //     fetch(beefURL)
+    //         .then(response => response.json())
+    //         .then(data => data.meals.forEach(meal => getMealById(meal.idMeal)))
+    // }, [])
+
+
+    const getMealById = (id) => {
+        setCategoryMeals([])
+        fetch(idURL + id)
             .then(response => response.json())
-            // 4. Setting *dogImage* to the image url that we received from the response above
-            .then(data => setStartingMeals(data.meals))
+            .then(data => setCategoryMeals(prevCategoryMeals => [data, ...prevCategoryMeals])
+            )
+    }
+
+    const getCategory = (category) => {
+        fetch(categoryBaseURL + category)
+            .then(response => response.json())
+            .then(data => data.meals.forEach(meal => getMealById(meal.idMeal)))
+    }
+
+    useEffect(() => {
+        getCategory('beef')
     }, [])
+
 
     return (
 
@@ -32,9 +61,9 @@ const Home = () => {
                     <button className="showcase-button"><span className="showcase-search-button-text">Search</span></button>
                 </div>
             </div>
-            {/* <SlidingMenu /> */}
+            <SlidingMenu getCategory={getCategory} />
             <div className="grid">
-                {startingMeals && !data && startingMeals.map(meal => <Card key={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} />)}
+                {categoryMeals && !data && categoryMeals.map(meal => <Card key={meal.meals[0].idMeal} title={meal.meals[0].strMeal} category={meal.meals[0].strCategory} area={meal.meals[0].strArea} img={meal.meals[0].strMealThumb} />)}
                 {data && data.meals && data.meals.map(meal => <Card key={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} />)}
             </div>
         </main>
