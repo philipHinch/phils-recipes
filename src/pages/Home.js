@@ -3,7 +3,6 @@ import SlidingMenu from '../components/SlidingMenu';
 import Card from '../components/Card';
 import { useState, useEffect } from 'react';
 import { useFetch } from '../hooks/useFetch';
-import Category from './Category';
 
 const Home = () => {
 
