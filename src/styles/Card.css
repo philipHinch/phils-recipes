@@ -24,9 +24,7 @@
 
   transition: transform 0.2s ease;
 }
-.card-container:hover {
-  transform: scale(1.02);
-}
+
 .card-container:hover .card-image img {
   transform: scale(1.05);
 }

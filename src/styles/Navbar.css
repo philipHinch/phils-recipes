@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 
 header {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
   padding: 20px;

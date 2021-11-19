@@ -1,7 +1,8 @@
 .showcase-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 520px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,24 +45,26 @@
   padding: 20px;
   font-size: 1.2em;
   letter-spacing: 1px;
-  -webkit-border-top-left-radius: 25px;
+  border-radius: 25px;
+  /* -webkit-border-top-left-radius: 25px;
   -webkit-border-bottom-left-radius: 25px;
   -moz-border-radius-topleft: 25px;
   -moz-border-radius-bottomleft: 25px;
   border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
   box-shadow: none;
   border: none;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
   outline: none;
-  border: 1px solid black;
-  border-right: none;
+  border: 2px solid #f5a1a5;
+  background-color: #f6f6f6;
 }
 .showcase-input:focus {
-  border-color: #f54e59;
+  border: 2px solid #f54e59;
+  background-color: white;
 }
 
-.showcase-button {
+/* .showcase-button {
   padding-right: 6px;
   background-color: #fff;
   -webkit-border-top-right-radius: 25px;
@@ -88,7 +91,7 @@
 }
 .showcase-button:hover .showcase-search-button-text {
   opacity: 0.7;
-}
+} */
 
 .grid {
   width: 100%;

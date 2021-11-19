@@ -1,9 +1,8 @@
 import '../styles/Category.css';
-import Card from '../components/Card';
-import SlidingMenu from '../components/SlidingMenu';
+import Card from './Card';
 import { useState, useEffect } from 'react';
 
-const Category = ({ data, category }) => {
+const Category = ({ inputValue, category }) => {
 
     const idURL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
     const categoryBaseURL = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=';
@@ -14,7 +13,7 @@ const Category = ({ data, category }) => {
         setCategoryMeals([])
         fetch(idURL + id)
             .then(response => response.json())
-            .then(data => setCategoryMeals(prevCategoryMeals => [data, ...prevCategoryMeals])
+            .then(data => setCategoryMeals(prevCategoryMeals => [...prevCategoryMeals, data])
             )
     }
 
@@ -28,6 +27,7 @@ const Category = ({ data, category }) => {
         getCategory('beef')
     }, [])
 
+
     useEffect(() => {
         if (category) {
             getCategory(category)
@@ -38,7 +38,7 @@ const Category = ({ data, category }) => {
 
         <div className='grid'>
 
-            {categoryMeals && !data && categoryMeals.map(meal => <Card key={meal.meals[0].idMeal} title={meal.meals[0].strMeal} category={meal.meals[0].strCategory} area={meal.meals[0].strArea} img={meal.meals[0].strMealThumb} />)}
+            {categoryMeals && !inputValue && categoryMeals.map(meal => <Card key={meal.meals[0].idMeal} title={meal.meals[0].strMeal} category={meal.meals[0].strCategory} area={meal.meals[0].strArea} img={meal.meals[0].strMealThumb} />)}
 
         </div>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/SlidingMenu.css';
 
-const SlidingMenu = ({ setMenuCategory }) => {
+const SlidingMenu = ({ setMenuCategory, setInputValue }) => {
 
     const [categories,] = useState([
         //'Beef',
@@ -27,8 +27,10 @@ const SlidingMenu = ({ setMenuCategory }) => {
 
     const onClick = (id) => {
 
+        setInputValue('')
         setSelected(id);
         setMenuCategory(id)
+
 
 
     }

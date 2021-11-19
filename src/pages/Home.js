@@ -1,33 +1,34 @@
 import '../styles/Home.css';
 import SlidingMenu from '../components/SlidingMenu';
 import Card from '../components/Card';
-import Category from './Category';
-import { useState } from 'react';
-import { useFetch } from '../hooks/useFetch';
+import Category from '../components/Category';
+import { useEffect, useState } from 'react';
+import Showcase from '../components/Showcase';
 
 const Home = () => {
 
-    //////////       INSERT SLIDING MENU COMPONENT INSIDE CATEGORY COMPONENT!!!!!     //////////
 
-    const [inputValue, setInputValue] = useState(null)
+
+    const [inputValue, setInputValue] = useState('')
     const [menuCategory, setMenuCategory] = useState('')
+    const [searchedMeals, setSearchedMeals] = useState([])
 
-    const { data } = useFetch(inputValue && 'https://www.themealdb.com/api/json/v1/1/search.php?s=' + inputValue);
+    useEffect(() => {
+        fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=' + inputValue)
+            .then(res => res.json())
+            .then(data => setSearchedMeals(data.meals))
+    }, [inputValue])
 
     return (
 
         <main>
-            <div className="showcase-container">
-                <h2 className="showcase-title">What are you cooking today?</h2>
-                <div className="showcase-input-container">
-                    <input onChange={(e) => setInputValue(e.target.value) && inputValue === ''} type="text" className="showcase-input" placeholder="Search your meal..." />
-                    <button className="showcase-button"><span className="showcase-search-button-text">Search</span></button>
-                </div>
-            </div>
-            <SlidingMenu setMenuCategory={setMenuCategory} />
-            <Category data={data} category={menuCategory} />
+            <Showcase setInputValue={setInputValue} inputValue={inputValue} />
+            <SlidingMenu setMenuCategory={setMenuCategory} setInputValue={setInputValue} />
+            <Category category={menuCategory} inputValue={inputValue} />
             <div className="grid">
-                {data && data.meals && data.meals.map(meal => <Card key={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} />)}
+                {searchedMeals && inputValue && searchedMeals.map(meal => (
+                    <Card key={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} />)
+                )}
             </div>
         </main>
 

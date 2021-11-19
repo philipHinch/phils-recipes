@@ -9,20 +9,20 @@ const Card = ({ title, area, category, img }) => {
 
     const [heart, setHeart] = useState(faHeart2)
 
-    const handleMouseEnter = () => {
-        if (heart === faHeart2) {
-            setHeart(faHeart)
-        } else if (heart === faHeart) {
-            setHeart(faHeart2)
-        }
-    }
-    const handleMouseLeave = () => {
-        if (heart === faHeart2) {
-            setHeart(faHeart)
-        } else if (heart === faHeart) {
-            setHeart(faHeart2)
-        }
-    }
+    // const handleMouseEnter = () => {
+    //     if (heart === faHeart2) {
+    //         setHeart(faHeart)
+    //     } else if (heart === faHeart) {
+    //         setHeart(faHeart2)
+    //     }
+    // }
+    // const handleMouseLeave = () => {
+    //     if (heart === faHeart2) {
+    //         setHeart(faHeart)
+    //     } else if (heart === faHeart) {
+    //         setHeart(faHeart2)
+    //     }
+    // }
     const handleClick = () => {
         if (heart === faHeart) {
             setHeart(faHeart2)
@@ -42,7 +42,7 @@ const Card = ({ title, area, category, img }) => {
                 <div className="card-category"><p>{category}</p></div>
                 <div className="card-area"><p>{area}</p></div>
                 <div className="heart-btn"></div>
-                <FontAwesomeIcon icon={heart} size="lg" color="#f54e59" onClick={() => handleClick()} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
+                <FontAwesomeIcon icon={heart} size="lg" color="#f54e59" onClick={() => handleClick()} />
             </div>
         </div>
 

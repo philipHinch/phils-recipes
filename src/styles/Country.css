@@ -1,0 +1,147 @@
+.country-body {
+  padding-top: 70px;
+}
+.country-grid {
+  gap: 40px;
+  row-gap: 70px;
+  padding: 60px 20px;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+.area {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 40px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.area h3 {
+  display: flex;
+  align-items: center;
+  flex: 3;
+  letter-spacing: 20px;
+  font-size: 3rem;
+}
+.flag-container {
+  flex: 1;
+  height: 160px;
+  background-color: yellowgreen;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+.country-meal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.country-meal-card:hover img {
+  transform: scale(1.36);
+}
+.area-meal-img-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.area-meal-info-container {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.area-meal-img-container img {
+  width: 100%;
+  transform: scale(1.3);
+  transition: transform 0.2s ease;
+}
+/* FLAGS */
+.American {
+  background-image: url("../assets/flags/us.png");
+}
+.British {
+  background-image: url("../assets/flags/gb.png");
+}
+.Canadian {
+  background-image: url("../assets/flags/ca.png");
+}
+.Chinese {
+  background-image: url("../assets/flags/cn.png");
+}
+.Dutch {
+  background-image: url("../assets/flags/nl.png");
+}
+.Egyptian {
+  background-image: url("../assets/flags/eg.png");
+}
+.Indian {
+  background-image: url("../assets/flags/in.png");
+}
+.Croatian {
+  background-image: url("../assets/flags/hr.png");
+}
+.Japanese {
+  background-image: url("../assets/flags/jp.png");
+}
+.Greek {
+  background-image: url("../assets/flags/gr.png");
+}
+.French {
+  background-image: url("../assets/flags/fr.png");
+}
+.Italian {
+  background-image: url("../assets/flags/it.png");
+}
+.Irish {
+  background-image: url("../assets/flags/ie.png");
+}
+.Jamaican {
+  background-image: url("../assets/flags/jm.png");
+}
+.Polish {
+  background-image: url("../assets/flags/pl.png");
+}
+.Portuguese {
+  background-image: url("../assets/flags/pt.png");
+}
+.Kenyan {
+  background-image: url("../assets/flags/ke.png");
+}
+.Mexican {
+  background-image: url("../assets/flags/mx.png");
+}
+.Russian {
+  background-image: url("../assets/flags/ru.png");
+}
+.Thai {
+  background-image: url("../assets/flags/th.png");
+}
+.Turkish {
+  background-image: url("../assets/flags/tr.png");
+}
+.Malaysian {
+  background-image: url("../assets/flags/my.png");
+}
+.Spanish {
+  background-image: url("../assets/flags/es.png");
+  background-size: cover;
+}
+.Tunisian {
+  background-image: url("../assets/flags/tn.png");
+}
+.Vietnamese {
+  background-image: url("../assets/flags/vn.png");
+}
+.Moroccan {
+  background-image: url("../assets/flags/ma.png");
+}
