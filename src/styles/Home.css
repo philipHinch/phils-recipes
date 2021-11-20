@@ -100,3 +100,26 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@media (max-width: 900px) {
+  .showcase-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-bottom: 5px solid #f54e59;
+  }
+  .showcase-title {
+    font-size: 3rem;
+    z-index: 3;
+    margin-top: -30px;
+  }
+  .showcase-input-container {
+    width: 80%;
+  }
+  .showcase-input {
+    padding: 15px;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+}

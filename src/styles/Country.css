@@ -10,28 +10,30 @@
 }
 .area {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 2rem;
-  padding: 40px;
+  padding: 40px 0px;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
 .area h3 {
   display: flex;
   align-items: center;
-  flex: 3;
+  height: 160px;
+  width: 300px;
   letter-spacing: 20px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  opacity: 0.8;
 }
 .flag-container {
-  flex: 1;
   height: 160px;
-  background-color: yellowgreen;
+  width: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
   filter: blur(2px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 .country-meal-card {
   display: flex;
@@ -144,4 +146,26 @@
 }
 .Moroccan {
   background-image: url("../assets/flags/ma.png");
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  .area {
+    font-size: 2rem;
+    padding: 40px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area h3 {
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+    font-size: 2rem;
+  }
+  .flag-container {
+    height: 100px;
+    width: 200px;
+  }
 }

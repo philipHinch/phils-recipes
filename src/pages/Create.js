@@ -1,9 +1,12 @@
 import '../styles/Create.css';
+import HamburgerMenu from '../components/HamburgerMenu';
 
-const Create = () => {
+const Create = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
     return (
 
-        <div>create</div>
+        <div>
+            {isHamburgerClicked && <HamburgerMenu isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />}
+        </div>
     );
 }
 

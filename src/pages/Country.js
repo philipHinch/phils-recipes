@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../styles/Country.css';
+import HamburgerMenu from '../components/HamburgerMenu';
 
-const Country = () => {
+const Country = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
 
     const areaBaseURL = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=';
     const areasURL = 'https://www.themealdb.com/api/json/v1/1/list.php?a=list';
@@ -30,15 +31,19 @@ const Country = () => {
         }
     }, [])
 
-
-
     return (
 
-
         <div className="country-body">
+
+            {isHamburgerClicked && <HamburgerMenu isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />}
+
             {areaMeals && areaMeals.map(meal => (
                 <div key={meal.area}>
-                    <div className={`area `}><h3>{meal.area}</h3><div className={`flag-container ${ meal.area }`}></div></div>
+                    <div className={`area `}>
+                        <h3>{meal.area}</h3>
+                        <div className={`flag-container ${ meal.area }`}>
+                        </div>
+                    </div>
                     <div className='country-grid grid'>
                         {
                             meal.data.meals.map(m => (

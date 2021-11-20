@@ -1,9 +1,15 @@
 import '../styles/Favourite.css';
+import HamburgerMenu from '../components/HamburgerMenu';
 
-const Favourite = () => {
+const Favourite = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
+
+
+
     return (
 
-        <div>favourite</div>
+        <div>
+            {isHamburgerClicked && <HamburgerMenu isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />}
+        </div>
     );
 }
 

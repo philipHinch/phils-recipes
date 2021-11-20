@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Country from './pages/Country';
@@ -8,18 +9,21 @@ import Favourite from './pages/Favourite';
 
 
 function App() {
+
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false)
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
             {/* <Route path="/category" element={<Category />} /> */}
-            <Route path="/country" element={<Country />} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/favourite" element={<Favourite />} />
-            <Route path="/country" element={<Country />} />
+            <Route path="/country" element={<Country isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
+            <Route path="/create" element={<Create isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
+            <Route path="/favourite" element={<Favourite isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
+            <Route path="/country" element={<Country isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
           </Routes>
         </div>
       </div>
