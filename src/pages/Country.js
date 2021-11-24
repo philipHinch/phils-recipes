@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import '../styles/Country.css';
 import HamburgerMenu from '../components/HamburgerMenu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
 
 const Country = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
 
@@ -11,7 +15,16 @@ const Country = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
     const countries = ['American', 'British', 'Canadian', 'Chinese', 'Croatian', 'Dutch', 'Egyptian', 'French', 'Greek', 'Indian', 'Irish', 'Italian', 'Jamaican', 'Japanese', 'Kenyan', 'Malaysian', 'Mexican', 'Moroccan', 'Polish', 'Portuguese', 'Russian', 'Spanish', 'Thai', 'Tunisian', 'Turkish', 'Unknown', 'Vietnamese']
 
     const [areaMeals, setAreaMeals] = useState([])
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+
+    const handleClick = () => {
+        if (isMenuOpen) {
+            setIsMenuOpen(false)
+        } else {
+            setIsMenuOpen(true)
+        }
+    }
 
     useEffect(() => {
         // countries.forEach(country => fetch(areaBaseURL + country)
@@ -37,10 +50,22 @@ const Country = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
 
             {isHamburgerClicked && <HamburgerMenu isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />}
 
+            <div className={`search-country ${ isMenuOpen ? '' : 'not-vis' }`}>
+                {/* <input type="text" id="search-country-input" /> */}
+                <ul id="search-country-ul">
+                    {countries && countries.map(country => (
+                        <li key={country} onClick={() => setIsMenuOpen(false)}><a href={`#${ country }`}>{country}</a></li>
+                    ))}
+                </ul>
+                <div className="arrow-container" onClick={handleClick}>
+                    {isMenuOpen ? <FontAwesomeIcon icon={faChevronUp} size={'lg'} /> : <FontAwesomeIcon icon={faChevronDown} size={'lg'} />}
+                </div>
+            </div>
+
             {areaMeals && areaMeals.map(meal => (
-                <div key={meal.area}>
+                <div key={meal.area} id={meal.area}>
                     <div className={`area `}>
-                        <h3>{meal.area}</h3>
+                        <h3 >{meal.area}</h3>
                         <div className={`flag-container ${ meal.area }`}>
                         </div>
                     </div>
@@ -52,7 +77,7 @@ const Country = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
                                         <img src={m.strMealThumb} alt="meal" />
                                     </div>
                                     <div className="area-meal-info-container">
-                                        {m.strMeal}
+                                        <h4>{m.strMeal}</h4>
                                     </div>
                                 </div>
                             ))

@@ -1,0 +1,65 @@
+.create-title {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.create-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  padding: 50px;
+  border: 1px solid black;
+}
+.ingredient-img-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.create-form input {
+  margin: 10px 0;
+}
+.create-form select {
+  margin: 10px 0;
+}
+.category-option {
+  cursor: pointer;
+}
+.ingredients-title {
+  margin-top: 10px;
+}
+.ingredient-inputs {
+  display: flex;
+}
+#ingredient-text-input {
+  flex: 5;
+  width: 100%;
+}
+#ingredient-number-input {
+  flex: 2;
+  width: 100%;
+}
+#ingredient-measure {
+  flex: 1;
+  width: 100%;
+}
+.add-ingredient {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.ingredients-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.my-meals-title {
+  text-align: center;
+  padding: 50px;
+}
