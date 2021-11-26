@@ -49,3 +49,17 @@
 .card-title {
   padding: 10px;
 }
+.card-category {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+.card-area {
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+.icon {
+  margin-right: 10px;
+}
