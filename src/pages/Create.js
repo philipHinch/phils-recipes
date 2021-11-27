@@ -4,15 +4,15 @@ import { useEffect, useState } from 'react/cjs/react.development';
 
 const Create = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
 
-    const categoriesURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+    // const categoriesURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
-    const [categories, setCategories] = useState([])
+    // const [categories, setCategories] = useState([])
 
-    useEffect(() => {
-        fetch(categoriesURL)
-            .then(response => response.json())
-            .then(data => setCategories(prevCategories => [...prevCategories, data.categories]))
-    }, [])
+    // useEffect(() => {
+    //     fetch(categoriesURL)
+    //         .then(response => response.json())
+    //         .then(data => setCategories(prevCategories => [...prevCategories, data.categories]))
+    // }, [])
 
     return (
 
