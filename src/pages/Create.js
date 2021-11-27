@@ -19,7 +19,7 @@ const Create = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
         <div>
             {isHamburgerClicked && <HamburgerMenu isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />}
 
-            <div className="create-container">
+            {/* <div className="create-container">
                 <h1 className="create-title">Create a Recipe</h1>
                 <form className="create-form">
                     <div className="ingredient-img-container">
@@ -61,7 +61,7 @@ const Create = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
             </div>
             <div className="my-meals-container">
                 <h1 className="my-meals-title">My Meals</h1>
-            </div>
+            </div> */}
         </div>
     );
 }
