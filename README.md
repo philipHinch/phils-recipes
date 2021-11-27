@@ -8,6 +8,10 @@ In the project directory, you can run:
 
 ### `npm start`
 
+---
+
+Here is the homepage preview:
+
 ![This is a preview](./src/assets/preview1.png)
 
 
