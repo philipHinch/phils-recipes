@@ -87,7 +87,7 @@ const Home = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
             <Category category={menuCategory} inputValue={inputValue} handleCardClick={handleCardClick} mealInfo={mealInfo} setModalVisible={setModalVisible} modalVisible={modalVisible} />
             <div className="grid">
                 {searchedMeals && inputValue && searchedMeals.map(meal => (
-                    <Card checkClassName={!LSMeals && LSMeals.includes(meal.meals[0].idMeal) ? setClassName('pink') : setClassName('grey')} className={className} key={meal.idMeal} id={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} onClick={(e) => handleCardClick(e)} />)
+                    <Card key={meal.idMeal} id={meal.idMeal} title={meal.strMeal} category={meal.strCategory} area={meal.strArea} img={meal.strMealThumb} onClick={(e) => handleCardClick(e)} />)
                 )}
             </div>
             {modalVisible && <MealModal setModalVisible={setModalVisible} mealInfo={mealInfo} />}
