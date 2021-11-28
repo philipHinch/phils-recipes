@@ -18,9 +18,9 @@ const Navbar = ({ setIsHamburgerClicked }) => {
                     className="hamburger hidden"
                     onClick={() => setIsHamburgerClicked(true)} />
                 <ul className="navbar-list">
-                    <Link to="/"> <li>Home</li> </Link>
+                    {/* <Link to="/"> <li>Home</li> </Link> */}
                     {/* <Link to="/category"> <li>Categories</li> </Link> */}
-                    <Link to="/country"> <li>Country</li> </Link>
+                    {/* <Link to="/country"> <li>Country</li> </Link> */}
                 </ul>
                 <Link to='/' className="main-title">
                     <h1>Phil's
@@ -30,8 +30,8 @@ const Navbar = ({ setIsHamburgerClicked }) => {
                     </h1>
                 </Link>
                 <ul>
-                    <Link to="/create"> <li>Create</li> </Link>
-                    <Link to="/favourite"> <li>Favourites</li> </Link>
+                    {/* <Link to="/create"> <li>Create</li> </Link>
+                    <Link to="/favourite"> <li>Favourites</li> </Link> */}
                 </ul>
             </div>
         </header>

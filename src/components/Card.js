@@ -85,7 +85,7 @@ const Card = ({ title, area, category, img, id, onClick, className, setClassName
                 <div className="card-category"><p><FontAwesomeIcon icon={faCubes} className='icon' style={{ color: '#f54e59' }} />{category}</p></div>
                 <div className="card-area"><p><FontAwesomeIcon icon={faGlobeEurope} className='icon' style={{ color: '#f54e59' }} />{area}</p></div>
                 <div className="heart-btn"></div>
-                <FontAwesomeIcon className={`heart ${ heartColor } ${ className }`} icon={faHeart} size="lg" onClick={(e) => handleHeartClick(e)} />
+                {/* <FontAwesomeIcon className={`heart ${ heartColor } ${ className }`} icon={faHeart} size="lg" onClick={(e) => handleHeartClick(e)} /> */}
 
             </div>
         </div>
