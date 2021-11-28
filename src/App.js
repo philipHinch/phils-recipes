@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Country from './pages/Country';
 import Create from './pages/Create';
 import Favourite from './pages/Favourite';
+import Footer from './components/Footer';
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/country" element={<Country isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
