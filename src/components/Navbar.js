@@ -31,7 +31,7 @@ const Navbar = ({ setIsHamburgerClicked }) => {
                 </Link>
                 <ul>
                     <Link to="/create"> <li>Create</li> </Link>
-                    <Link to="/favourite"> <li>Favourite</li> </Link>
+                    <Link to="/favourite"> <li>Favourites</li> </Link>
                 </ul>
             </div>
         </header>

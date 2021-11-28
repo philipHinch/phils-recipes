@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+.svg-background-modal-top {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.modal-bottom-container {
+  position: relative;
+  margin-top: 70px;
+  bottom: 0;
 
+  width: 200%;
+}
+.svg-background-modal-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
 .modal-backdrop {
   position: fixed;
   display: flex;
@@ -7,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
 .close-btn {
@@ -16,16 +32,18 @@
   right: 4%;
   cursor: pointer;
   transition: all 0.2s ease;
+  z-index: 2;
 }
 .close-btn:hover {
   opacity: 0.7;
 }
 .modal-container {
+  position: relative;
   width: 95%;
   height: 100vh;
-  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* background-color: rgba(255, 255, 255, 0.9); */
   background-color: #f6f6f6;
-  padding: 50px 200px;
+  padding: 50px 200px 0px 200px;
   /* CHANGE PADDING IN MEDIA QUERY */
   display: flex;
   flex-direction: column;
@@ -42,6 +60,7 @@
   background-color: #ccc;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
+  z-index: 2;
 }
 .modal-img-container img {
   width: 100%;
@@ -73,11 +92,13 @@
 .flag {
   width: 50px;
   height: 50px;
+  z-index: 2;
 }
 .food-icon {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
+  z-index: 2;
 }
 .flag img {
   width: 100%;
@@ -105,7 +126,7 @@
   /* border: 1px solid #ccc; */
   background-color: #eee;
   margin: 8px 0;
-  padding: 5px 50px;
+  padding: 5px 100px;
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
@@ -134,9 +155,11 @@
 .video {
   width: 100%;
   height: 500px;
+  z-index: 5;
 }
 .recipe-source {
   margin: 30px 0 0px 0;
+  z-index: 5;
 }
 .recipe-source a {
   color: #f54e59;
@@ -144,6 +167,7 @@
   cursor: pointer;
   transition: 0.2s all ease;
   border-bottom: 1px solid transparent;
+  z-index: 5;
 }
 .recipe-source a:hover {
   border-bottom: 1px solid #f54e59;
@@ -222,161 +246,161 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .British {
   background-image: url("../assets/flags/gb.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Canadian {
   background-image: url("../assets/flags/ca.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Chinese {
   background-image: url("../assets/flags/cn.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Dutch {
   background-image: url("../assets/flags/nl.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Egyptian {
   background-image: url("../assets/flags/eg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Indian {
   background-image: url("../assets/flags/in.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Croatian {
   background-image: url("../assets/flags/hr.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Japanese {
   background-image: url("../assets/flags/jp.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Greek {
   background-image: url("../assets/flags/gr.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .French {
   background-image: url("../assets/flags/fr.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Italian {
   background-image: url("../assets/flags/it.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Irish {
   background-image: url("../assets/flags/ie.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Jamaican {
   background-image: url("../assets/flags/jm.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Polish {
   background-image: url("../assets/flags/pl.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Portuguese {
   background-image: url("../assets/flags/pt.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Kenyan {
   background-image: url("../assets/flags/ke.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Mexican {
   background-image: url("../assets/flags/mx.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Russian {
   background-image: url("../assets/flags/ru.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Thai {
   background-image: url("../assets/flags/th.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Turkish {
   background-image: url("../assets/flags/tr.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Malaysian {
   background-image: url("../assets/flags/my.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Spanish {
   background-image: url("../assets/flags/es.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
   background-size: cover;
 }
 .Tunisian {
@@ -384,21 +408,21 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Vietnamese {
   background-image: url("../assets/flags/vn.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Moroccan {
   background-image: url("../assets/flags/ma.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 /* food-icons */
 .Beef {
@@ -406,96 +430,96 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Chicken {
   background-image: url("https://cdn-icons-png.flaticon.com/512/6241/6241222.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Dessert {
   background-image: url("https://cdn-icons.flaticon.com/png/512/5875/premium/5875656.png?token=exp=1637937974~hmac=2bfcc69160635ec7237d19f796387a2d");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Lamb {
   background-image: url("https://cdn-icons-png.flaticon.com/512/1702/1702830.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Miscellaneous {
   background-image: url("https://cdn-icons-png.flaticon.com/512/2934/2934108.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Pasta {
   background-image: url("https://cdn-icons.flaticon.com/png/512/2515/premium/2515289.png?token=exp=1637943708~hmac=8ccc8a46d028a7bd5349eda6f31e7283");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Pork {
   background-image: url("https://cdn-icons.flaticon.com/png/512/706/premium/706880.png?token=exp=1637943768~hmac=e892cf09535434b4cc36d94b6130f572");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Seafood {
   background-image: url("https://cdn-icons.flaticon.com/png/512/2195/premium/2195346.png?token=exp=1637943909~hmac=3a9b39c9f5f52ce7c8c875b9bd664592");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Side {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2182/premium/2182811.png?token=exp=1637944227~hmac=80ed2c3483f02b944ef1f36f836f7c90");
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3340/3340735.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Starter {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2388/premium/2388080.png?token=exp=1637944276~hmac=07980df78bcc4118587924d7afcfd817");
+  background-image: url("https://cdn-icons.flaticon.com/png/512/2388/premium/2388080.png?token=exp=1638088737~hmac=e119710bd4f4fd40e16a8f6c2df0d7fd");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Vegan {
   background-image: url("https://cdn-icons-png.flaticon.com/512/3778/3778979.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Vegetarian {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2153/premium/2153786.png?token=exp=1637944370~hmac=eb2b9e7b1038c8c3d3b3a999bea2f9c5");
+  background-image: url("https://cdn-icons.flaticon.com/png/512/2515/premium/2515183.png?token=exp=1638088790~hmac=6aa1489f8c752277939f20420a8c1581");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Breakfast {
   background-image: url("https://cdn-icons-png.flaticon.com/512/887/887359.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .Goat {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/5476/premium/5476482.png?token=exp=1637938097~hmac=9689bbef010e11f25141be360190325a");
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1728/1728745.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }

@@ -159,7 +159,6 @@
 //////////////////////////////////////////////
 
 import '../styles/Country.css';
-import { useEffect, useState } from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
 
 const categories = ['British', 'Canadian', 'Chinese', 'Croatian', 'Dutch', 'Egyptian', 'French', 'Greek', 'Indian', 'Irish', 'Italian', 'Jamaican', 'Japanese', 'Kenyan', 'Malaysian', 'Mexican', 'Moroccan', 'Polish', 'Portuguese', 'Russian', 'Spanish', 'Thai', 'Tunisian', 'Turkish', 'Unknown', 'Vietnamese'];

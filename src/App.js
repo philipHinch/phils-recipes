@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Country from './pages/Country';
@@ -12,6 +12,8 @@ import Favourite from './pages/Favourite';
 function App() {
 
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false)
+
+
 
   return (
     <Router>

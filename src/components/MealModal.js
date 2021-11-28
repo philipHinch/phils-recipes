@@ -8,10 +8,15 @@ const MealModal = ({ mealInfo, setModalVisible }) => {
     return (
 
         <div className="modal-backdrop">
+
             <FontAwesomeIcon icon={faTimes} size="2x" className="close-btn" onClick={() => setModalVisible(false)} />
             <div className="modal-container">
+                <svg className="svg-background-modal-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#f54e59" fillOpacity="0.2" d="M0,256L48,224C96,192,192,128,288,90.7C384,53,480,43,576,53.3C672,64,768,96,864,90.7C960,85,1056,43,1152,48C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                </svg>
+
                 <div className="modal-img-container">
-                    <img src={mealInfo.strMealThumb} alt="meal picture" />
+                    <img src={mealInfo.strMealThumb} alt="meal" />
                 </div>
                 <h2 className="meal-title">{mealInfo.strMeal}</h2>
                 <div className="meal-info">
@@ -50,12 +55,18 @@ const MealModal = ({ mealInfo, setModalVisible }) => {
                 </div>
                 <h3 className="buon-appetito">Buon Appetito!</h3>
                 <div className="video">
-                    <iframe className="video" id="player" type="text/html" width="640" height="390" src={`https://www.youtube.com/embed/${ mealInfo.strYoutube && mealInfo.strYoutube.slice(32) }`} frameBorder="0"></iframe>
+                    <iframe className="video" title="video" id="player" type="text/html" width="640" height="390" src={`https://www.youtube.com/embed/${ mealInfo.strYoutube && mealInfo.strYoutube.slice(32) }`} frameBorder="0"></iframe>
                 </div>
                 <div className="recipe-source">
-                    {mealInfo.strSource && <a href={mealInfo.strSource} target='_blank'>Recipe Source</a>}
+                    {mealInfo.strSource && <a href={mealInfo.strSource} target='_blank' rel="noreferrer">Recipe Source</a>}
+                </div>
+                <div className="modal-bottom-container">
+                    <svg className="svg-background-modal-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#f54e59" fillOpacity="0.2" d="M0,224L48,240C96,256,192,288,288,282.7C384,277,480,235,576,224C672,213,768,235,864,245.3C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
                 </div>
             </div>
+
         </div >
 
     );

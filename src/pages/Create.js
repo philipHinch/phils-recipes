@@ -1,6 +1,5 @@
 import '../styles/Create.css';
 import HamburgerMenu from '../components/HamburgerMenu';
-import { useEffect, useState } from 'react/cjs/react.development';
 
 const Create = ({ isHamburgerClicked, setIsHamburgerClicked }) => {
 
