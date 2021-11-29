@@ -1,6 +1,6 @@
 # Phil's Recipes
 
-This is my very first **React** project and is a remake of the Vanilla JavaScript [My Foods App](https://github.com/philipHinch/my-foods-app).
+This is my very first **React** project and is a remake of my Vanilla JavaScript [My Foods App](https://github.com/philipHinch/my-foods-app).
 
 Here you can search your favourite meals and filter them by category. 
 
