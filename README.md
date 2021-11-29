@@ -8,7 +8,7 @@ When clicking on a meal, a modal will pop up with all the detailed info about th
 
 The recipes are fetched from [TheMealDB](https://www.themealdb.com/) API.
 
-[View Phil's Recipes](https://phils-recipes.netlify.app/)
+[View Project](https://phils-recipes.netlify.app/)
 
 ---
 
@@ -39,6 +39,6 @@ Here is the homepage preview:
 
 ![This is a preview](./src/assets/preview1.png)
 
-[View Phil's Recipes](https://phils-recipes.netlify.app/)
+[View Project](https://phils-recipes.netlify.app/)
 
 
