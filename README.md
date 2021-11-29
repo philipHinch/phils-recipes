@@ -35,7 +35,7 @@ In the project directory, you can run:
 
 ---
 
-Here is the homepage preview:
+Here are some previews:
 
 ![This is a preview](./src/assets/preview1.png)
 ---
