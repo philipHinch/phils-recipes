@@ -35,9 +35,13 @@ In the project directory, you can run:
 
 ---
 
-Here is the homepage preview:
+Here are some previews:
 
 ![This is a preview](./src/assets/preview1.png)
+---
+![This is a preview](./src/assets/preview2.png)
+---
+![This is a preview](./src/assets/preview3.png)
 
 [View Project](https://phils-recipes.netlify.app/)
 
