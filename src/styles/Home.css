@@ -128,4 +128,12 @@
     font-size: 1em;
     letter-spacing: 1px;
   }
+  .svg-background {
+    width: 1900px;
+  }
+}
+@media (max-width: 500px) {
+  .svg-background {
+    width: 1700px;
+  }
 }

@@ -178,12 +178,22 @@
 
 @media (max-width: 900px) {
   .modal-container {
-    padding: 50px 40px 0px 75px;
+    padding: 50px 40px 0px 40px;
+  }
+  .modal-img-container {
+    /* max-width: 300px;
+    max-height: 300px; */
+    margin: 10px;
+    width: 350px;
   }
   .food-icon {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
+  }
+  .flag {
+    width: 40px;
+    height: 40px;
   }
   .meal-title {
     letter-spacing: 2px;
@@ -209,6 +219,7 @@
     /* max-width: 300px;
     max-height: 300px; */
     margin: 10px;
+    width: 300px;
   }
   .modal-container {
     width: 100%;
