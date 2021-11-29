@@ -12,11 +12,11 @@ const Navbar = ({ setIsHamburgerClicked }) => {
 
         <header>
             <div className="inner-header">
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                     icon={faBars}
                     size="2x"
                     className="hamburger hidden"
-                    onClick={() => setIsHamburgerClicked(true)} />
+                    onClick={() => setIsHamburgerClicked(true)} /> */}
                 <ul className="navbar-list">
                     {/* <Link to="/"> <li>Home</li> </Link> */}
                     {/* <Link to="/category"> <li>Categories</li> </Link> */}
