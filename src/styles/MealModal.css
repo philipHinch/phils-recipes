@@ -439,98 +439,98 @@
 }
 /* food-icons */
 .Beef {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/3743/premium/3743481.png?token=exp=1637937171~hmac=8d80592055ba4544a89c591c368f7641");
+  background-image: url("../assets/icons/beef.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Chicken {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/6241/6241222.png");
+  background-image: url("../assets/icons/chicken.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Dessert {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/5875/premium/5875656.png?token=exp=1637937974~hmac=2bfcc69160635ec7237d19f796387a2d");
+  background-image: url("../assets/icons/dessert.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Lamb {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/1702/1702830.png");
+  background-image: url("../assets/icons/lamb.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Miscellaneous {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/2934/2934108.png");
+  background-image: url("../assets/icons/miscellaneous.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Pasta {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2515/premium/2515289.png?token=exp=1637943708~hmac=8ccc8a46d028a7bd5349eda6f31e7283");
+  background-image: url("../assets/icons/pasta.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Pork {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/706/premium/706880.png?token=exp=1637943768~hmac=e892cf09535434b4cc36d94b6130f572");
+  background-image: url("../assets/icons/pork.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Seafood {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2195/premium/2195346.png?token=exp=1637943909~hmac=3a9b39c9f5f52ce7c8c875b9bd664592");
+  background-image: url("../assets/icons/seafood.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Side {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/3340/3340735.png");
+  background-image: url("../assets/icons/side.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Starter {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2388/premium/2388080.png?token=exp=1638088737~hmac=e119710bd4f4fd40e16a8f6c2df0d7fd");
+  background-image: url("../assets/icons/starter.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Vegan {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/3778/3778979.png");
+  background-image: url("../assets/icons/vegan.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Vegetarian {
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2515/premium/2515183.png?token=exp=1638088790~hmac=6aa1489f8c752277939f20420a8c1581");
+  background-image: url("../assets/icons/vegetarian.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Breakfast {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/887/887359.png");
+  background-image: url("../assets/icons/breakfast.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
 }
 .Goat {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/1728/1728745.png");
+  background-image: url("../assets/icons/goat.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
