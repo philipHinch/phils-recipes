@@ -12,6 +12,8 @@ The recipes are fetched from [TheMealDB](https://www.themealdb.com/) API.
 
 I used useState & useEffect hooks for state management. 
 
+Inspired by [Milan Chudoba](https://dribbble.com/shots/6085508/attachments/6085508-Mamine-Recepty-TV-JOJ?mode=media)
+
 [View Project](https://phils-recipes.netlify.app/)
 
 ---
