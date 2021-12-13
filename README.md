@@ -31,6 +31,18 @@ The technologies used in this project are:
 
 ---
 
+### Install Dependencies
+
+```
+npm install
+```
+
+### Run
+
+```
+npm start
+```
+
 In the project directory, you can run:
 
 ### `npm start`
