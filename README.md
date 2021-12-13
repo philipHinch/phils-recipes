@@ -43,10 +43,6 @@ npm install
 npm start
 ```
 
-In the project directory, you can run:
-
-### `npm start`
-
 ---
 
 Here are some previews:
