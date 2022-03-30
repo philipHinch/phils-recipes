@@ -16,7 +16,7 @@ Inspired by [Milan Chudoba](https://dribbble.com/shots/6085508/attachments/60855
 
 [View Project](https://phils-recipes.netlify.app/)
 
----
+![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 The technologies used in this project are:
 
@@ -30,7 +30,7 @@ The technologies used in this project are:
 8. HIGH ORDER FUNCTIONS
 9. CSS ANIMATIONS
 
----
+![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 ### Install Dependencies
 
@@ -44,9 +44,7 @@ npm install
 npm start
 ```
 
----
-
-Here are some previews:
+![This is an image](https://raw.githubusercontent.com/philipHinch/underline/main/underline.png)
 
 ![This is a preview](./src/assets/preview1.png)
 ---
